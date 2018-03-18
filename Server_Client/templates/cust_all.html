@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer list</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-inner">
+        <a class="brand" href="#">POC API Client Demo</a>
+    </div>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <tr>
+      <td>Customer</td><td>Options</td>
+    </tr>
+    <!--ko foreach: custs-->
+    <tr>
+      <td><b data-bind="text:name"></b>
+        <p data-bind="text:email"></p>
+      </td><td></td>
+    </tr>
+    <!-- /ko -->
+  </table>
+</div>
+<script>
+function CustsViewModel() {
+    var self = this
+
+    self.custURI = 'http://localhost:5000/api/v1.0/get_cust_detail/'
+
+    self.custs = ko.observableArray()
+
+    self.ajax = function (uri, method, data) {
+            var request = {
+                url: uri,
+                type: method,
+                contentType: "application/json",
+                accepts: "application/json",
+                cache: false,
+                dataType: 'json',
+                data: JSON.stringify(data),
+                timeout: 30000,
+                crossOrigin: true,
+                headers: {"x-li-format": "json", "X-UserName": "POC"},
+                success: function (data) {
+                    // can log something
+                },
+
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("ajax error " + jqXHR.status)
+                    alert("ajax call failure " + textStatus)
+                }
+            }
+            return $.ajax(request)
+        }
+
+    self.ajax(self.custURI, 'GET').done(function (data) {
+
+    console.log(data)
+
+    for (var dj in data['customer']) {
+                console.log(data['customer'][dj])
+                //console.log('username '+data[0])
+                k_name = data['customer'][dj].name
+                k_email = data['customer'][dj].email
+
+                console.log('name ' + k_name)
+                console.log('email ' + k_email)
+                self.custs.push({
+                    name: ko.observable(k_name),
+                    email: ko.observable(k_email)
+                })
+
+        }
+
+        {#for (var i = 0; i < data.tasks.length; i++) {
+                self.tasks.push({
+                    uri: ko.observable(data.tasks[i].uri),
+                    title: ko.observable(data.tasks[i].title),
+                    description: ko.observable(data.tasks[i].description),
+                    done: ko.observable(data.tasks[i].done)
+                });
+            }#}
+    })
+
+  }
+
+//constructor
+var custsViewModel = new CustsViewModel()
+
+//binding view (html) to the model
+ko.applyBindings(custsViewModel, $('#main')[0])
+</script>
+
+</body>
+</html>

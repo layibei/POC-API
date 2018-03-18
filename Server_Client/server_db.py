@@ -48,7 +48,10 @@ def get_cust(cust_id):
 
     #return jsonify({'cust': cust_list})  #list object
     return jsonify(
-        [{'id': cust_temp.id, 'name': cust_temp.name, 'email': cust_temp.email, 'password': cust_temp.password}])
+        [{'id': cust_temp.id,
+          'name': cust_temp.name,
+          'email': cust_temp.email,
+          'password': cust_temp.password}])
 
     #if len(task_temp) == 0:
 	# abort(404)
