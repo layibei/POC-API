@@ -117,6 +117,19 @@ def get_static():
 
     return jsonify({'country': country_list})
 
+@app.route('/api/v1.0/get_cust_detail/<int:cust_id>', methods=['PUT'])
+def update_cust(cust_id):
+    #cust_temp = engine.execute('select * from s_customer where id = :id', id=cust_id).first()
+
+    # cust_temp.id = request.json.get('id', cust_temp.id)
+    # cust_temp.name = request.json.get('name', cust_temp.name)
+    # cust_temp.email = request.json.get('email', cust_temp.email)
+    print("*************")
+    print(request.json)
+    c_list=[]
+    #c_list = [{ 'id': cust_temp.id , 'name' : cust_temp.name , 'email' : cust_temp.email }]
+    return jsonify({'customer': c_list })
+
 
 if __name__ == '__main__':
 

@@ -60,15 +60,21 @@
             <td>customer country</td>
             <td>
 
-                <select data-bind="options: staticData"></select>
+                <select id="id-select-country" data-bind="options: staticData"></select>
             </td>
-            <td></td>
+
         </tr>
     </table>
 </div>
-
+<div id="id-div-btn">
+    <button data-bind="click: edit" class="btn">Update</button>
+</div>
 
 <script type="text/javascript">
+
+    var log = function(){
+              console.log.apply(console,arguments)
+            }
 
     var Common_Ajax = function (uri, method, data) {
         var request = {
@@ -91,16 +97,18 @@
                 alert("ajax call failure " + textStatus);
             }
         };
-        return $.ajax(request);
+        return $.ajax(request)
     }
 
+
+
     function CustsViewModel() {
-        var self = this;
+        var self = this
 
-        self.custURI = 'http://localhost:5000/api/v1.0/get_cust_detail/1';
+        self.custURI = 'http://localhost:5000/api/v1.0/get_cust_detail/1'
 
 
-        self.custs = ko.observableArray();
+        self.custs = ko.observableArray()
 
 
         Common_Ajax(self.custURI, 'GET').done(function (data) {
@@ -111,12 +119,14 @@
             for (var dj in data['customer']) {
                 console.log(data['customer'][dj])
                 //console.log('username '+data[0])
+                k_id = data['customer'][dj].id
                 k_name = data['customer'][dj].name
                 k_email = data['customer'][dj].email
 
                 console.log('name ' + k_name)
                 console.log('email ' + k_email)
                 self.custs.push({
+                    id: ko.observable(k_id),
                     name: ko.observable(k_name),
                     email: ko.observable(k_email)
                 })
@@ -125,14 +135,17 @@
         })
 
 
+
+
     }
 
+
     function StaticDataViewModel() {
-        var self = this;
+        var self = this
 
-        self.staticDataURI = 'http://localhost:5000/api/v1.0/get_static_data/';
+        self.staticDataURI = 'http://localhost:5000/api/v1.0/get_static_data/'
 
-        self.staticData = ko.observableArray([]);
+        self.staticData = ko.observableArray([])
 
         Common_Ajax(self.staticDataURI, 'GET').done(function (data) {
 
@@ -157,6 +170,48 @@
 
     }
 
+    function EditCustViewModel() {
+            var self = this
+            self.editCustURI = 'http://localhost:5000/api/v1.0/get_cust_detail/1'
+
+            self.id = ko.observable()
+            self.name = ko.observable()
+            self.email = ko.observable()
+
+            self.setCust = function(cust) {
+                self.cust = cust;
+                self.id(cust.id())
+                self.name(cust.name())
+                self.email(cust.email())
+            }
+
+            self.editCust = function() {
+                custsViewModel.edit(self.cust, {
+                                    id: self.id(),
+                                    name: self.name() ,
+                                    email: self.email()
+                                    });
+            }
+
+            self.updateCust = function(cust, newCust) {
+                    var self = this
+                    var i = custs.indexOf(cust)
+                    {#custs()[i].uri(newCust.uri)#}
+                    custs()[i].id(newCust.id)
+                    custs()[i].name(newCust.name)
+                    custs()[i].email(newCust.eamil)
+                }
+
+
+            self.edit = function(cust, data) {
+                        log('uri',cust.id)
+                        Common_Ajax(self.editCustURI, 'PUT').done(function(res) {
+                                                                self.updateTask(cust, res.cust);
+                                                                })
+                    }
+        }
+
+
 {#    var viewModel = {
         availableCountries: ko.observableArray(['France', 'Germany', 'Spain'])
     };
@@ -167,9 +222,13 @@
     var custsViewModel = new CustsViewModel()
     var staticDataViewModel = new StaticDataViewModel()
 
+    var editCustViewModel = new EditCustViewModel()
+
     //binding view (html) to the model
     ko.applyBindings(custsViewModel, $('#main')[0])
     ko.applyBindings(staticDataViewModel, $('#div-form')[0])
+
+    ko.applyBindings(editCustViewModel, $('#id-div-btn')[0])
 
 </script>
 </body>
