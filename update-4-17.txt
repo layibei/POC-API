@@ -1,0 +1,2 @@
+disable compatiable mode in IE
+<meta charset="UTF-8" http-equiv="X-UA-Compatiable" content="IE=9;IE=8;IE=7;IE=EDGE">
