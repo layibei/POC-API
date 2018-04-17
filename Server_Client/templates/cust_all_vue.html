@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
     <script src="/static/js/vue.js"></script>
 </head>
 <body>
-        <h1>0313, >> VUE</h1>
+       <!-- <h1>0313, >> VUE</h1>
         <div id="app">
             <span v-text="message"></span>
             <span>{{ message }}</span>
@@ -21,7 +22,47 @@
                     message: "Hello, world!"
                 }
             });
-            alert(v1.message);//"Hello, world!"
+            //alert(v1.message);//"Hello, world!"
+        </script>-->
+
+        <div id ="app2">
+            <table>
+            <tbody id ="userinfor">
+            <tr v-for="list in data">
+                                    <td width="30px" align="center">
+                                        <input type="checkbox" name="checkbox" ></td>
+                                    <td v-text="list.name"></td>
+                                    <td v-text="list.email"></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <script>
+            $(function(data) {
+                $.ajax({
+                    type:'get',
+                    url:'http://localhost:5000/api/v1.0/get_cust_detail/',
+                    dataType: 'json',
+                    data: JSON.stringify(data),
+                    success: function(data){
+
+                            pushDom(data);
+
+                    },
+                    error: function(data){
+                        alert(JSON.stringify(data));
+                    }
+                });
+
+                function pushDom(data){
+                    // 然后再交给 vue 进行渲染
+                    var vm = new Vue({
+                        el: '#app2',
+                        data: data
+                    });
+                }
+            })
         </script>
     </body>
 </html>
