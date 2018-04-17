@@ -3,3 +3,8 @@ disable compatiable mode in IE
 
 两种绑定方法：
 https://www.cnblogs.com/feiDD/articles/2854430.html
+
+
+introduce VUE
+vue是现在很火的一个前端MVVM框架，它以数据驱动和组件化的思想构建，与angular和react并称前端三大框架。
+https://segmentfault.com/a/1190000010801357
