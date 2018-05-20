@@ -2,6 +2,7 @@ from flask import Flask, jsonify, abort, request, url_for, make_response , rende
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine, MetaData
+from sqlalchemy.orm import sessionmaker,mapper
 #from model.cmms import Cmms
 
 app = Flask(__name__)
@@ -13,6 +14,8 @@ CORS (app)
 
 engine = create_engine('oracle://system:Woxhni.123@127.0.0.1/mydb', convert_unicode=True)
 metadata = MetaData(bind=engine)
+DBSession = sessionmaker(bind=engine)
+
 
 class Customer(db.Model):
     __tablename__ = 's_customer'
@@ -36,6 +39,24 @@ class Customer(db.Model):
 
         print(c_list)
         return c_list
+
+    def update_byid(id,email):
+        session = DBSession()
+        try:
+            print('*****before')
+
+            query = session.query(Customer)
+            print(query.filter(Customer.id == id).first().name)
+            query.filter(Customer.id == id).update({Customer.name: 'jackson', Customer.email: email})
+            session.commit()
+
+            print('*****after')
+            print(query.filter(Customer.id == id).first().name)
+        except:
+            session.rollback()
+            raise
+        finally:
+            session.close()
 
 
 class Cmms(db.Model):
@@ -101,6 +122,10 @@ def get_cust_id(cust_id):
     return jsonify({'customer': c_list})
 
 
+@app.route('/cust_all_vue/')
+def cust_all_vue(name=None):
+    return render_template('cust_all_vue.html', name=name)
+
 @app.route('/cust_all/')
 def cust_all(name=None):
     return render_template('cust_all.html', name=name)
@@ -125,8 +150,16 @@ def update_cust(cust_id):
     # cust_temp.name = request.json.get('name', cust_temp.name)
     # cust_temp.email = request.json.get('email', cust_temp.email)
     print("*************")
-    print(request.json)
+    #print(request.method)
+    #print(request.json)
+    email=request.json['task']
+    id=1
+    #print(email)
     c_list=[]
+    Customer.update_byid(id,email)
+
+
+
     #c_list = [{ 'id': cust_temp.id , 'name' : cust_temp.name , 'email' : cust_temp.email }]
     return jsonify({'customer': c_list })
 
@@ -137,5 +170,6 @@ if __name__ == '__main__':
         debug=True,
         host='0.0.0.0',
         port=5000,
+        threaded=True,
     )
     app.run(**config)

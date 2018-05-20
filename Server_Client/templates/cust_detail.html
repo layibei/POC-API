@@ -33,6 +33,7 @@
                 <p data-bind="text: email"></p></td>
             <td>
                 <button data-bind="click: $parent.edit" class="btn">Edit</button>
+                <button data-bind="click : $parent.updateTodo">click me</button>
                 {#<button data-bind="click: $parent.remove" class="btn">Delete</button>
             <span data-bind="visible: done">
                 <button data-bind="click: $parent.markInProgress" class="btn">Mark In Progress</button>
@@ -61,13 +62,11 @@
             <td>
 
                 <select id="id-select-country" data-bind="options: staticData"></select>
+
             </td>
 
         </tr>
     </table>
-</div>
-<div id="id-div-btn">
-    <button data-bind="click: edit" class="btn">Update</button>
 </div>
 
 <script type="text/javascript">
@@ -113,7 +112,7 @@
 
         Common_Ajax(self.custURI, 'GET').done(function (data) {
 
-            console.log(data)
+            {#console.log(data)#}
 
 
             for (var dj in data['customer']) {
@@ -123,8 +122,8 @@
                 k_name = data['customer'][dj].name
                 k_email = data['customer'][dj].email
 
-                console.log('name ' + k_name)
-                console.log('email ' + k_email)
+                {#console.log('name ' + k_name)#}
+                {#console.log('email ' + k_email)#}
                 self.custs.push({
                     id: ko.observable(k_id),
                     name: ko.observable(k_name),
@@ -134,6 +133,19 @@
             }
         })
 
+        self.updateTodo = function() {
+                log('####')
+                var request = {
+                    url: 'http://localhost:5000/api/v1.0/get_cust_detail/1',
+                    method: 'PUT',
+                    contentType: 'application/json',
+                    data: '{"task": "play games"}',
+                    callback: function(response) {
+                        console.log('update', response)
+                    }
+                }
+                return $.ajax(request)
+                }
 
 
 
@@ -149,17 +161,17 @@
 
         Common_Ajax(self.staticDataURI, 'GET').done(function (data) {
 
-            console.log(data)
+            {#console.log(data)#}
 
 
             for (var dj in data['country']) {
-                console.log(data['country'][dj])
+                {#console.log(data['country'][dj])#}
                 //console.log('username '+data[0])
                 k_id = data['country'][dj].option_id
                 k_value = data['country'][dj].option_value
 
-                console.log('id ' + k_id)
-                console.log('value ' + k_value)
+                {#console.log('id ' + k_id)#}
+                {#console.log('value ' + k_value)#}
                 self.staticData.push( ko.observable(k_value) )
 
             }
@@ -168,48 +180,35 @@
         })
 
 
+
+
     }
 
     function EditCustViewModel() {
             var self = this
             self.editCustURI = 'http://localhost:5000/api/v1.0/get_cust_detail/1'
 
+            self.custs = ko.observableArray([])
+
             self.id = ko.observable()
             self.name = ko.observable()
             self.email = ko.observable()
 
-            self.setCust = function(cust) {
-                self.cust = cust;
-                self.id(cust.id())
-                self.name(cust.name())
-                self.email(cust.email())
-            }
-
-            self.editCust = function() {
-                custsViewModel.edit(self.cust, {
-                                    id: self.id(),
-                                    name: self.name() ,
-                                    email: self.email()
-                                    });
-            }
-
-            self.updateCust = function(cust, newCust) {
-                    var self = this
-                    var i = custs.indexOf(cust)
-                    {#custs()[i].uri(newCust.uri)#}
-                    custs()[i].id(newCust.id)
-                    custs()[i].name(newCust.name)
-                    custs()[i].email(newCust.eamil)
+                self.updateTodo = function() {
+                log('####')
+                var request = {
+                    url: 'http://localhost:5000/api/v1.0/get_cust_detail/1',
+                    method: 'PUT',
+                    contentType: 'application/json',
+                    data: '{"task": "play games"}',
+                    callback: function(response) {
+                        console.log('update', response)
+                    }
+                }
+                return $.ajax(request)
                 }
 
-
-            self.edit = function(cust, data) {
-                        log('uri',cust.id)
-                        Common_Ajax(self.editCustURI, 'PUT').done(function(res) {
-                                                                self.updateTask(cust, res.cust);
-                                                                })
-                    }
-        }
+            }
 
 
 {#    var viewModel = {
@@ -220,15 +219,15 @@
 
     //constructor
     var custsViewModel = new CustsViewModel()
-    var staticDataViewModel = new StaticDataViewModel()
-
-    var editCustViewModel = new EditCustViewModel()
+    {#var staticDataViewModel = new StaticDataViewModel()#}
+    {##}
+    {#var editCustViewModel = new EditCustViewModel()#}
 
     //binding view (html) to the model
     ko.applyBindings(custsViewModel, $('#main')[0])
-    ko.applyBindings(staticDataViewModel, $('#div-form')[0])
-
-    ko.applyBindings(editCustViewModel, $('#id-div-btn')[0])
+    {#ko.applyBindings(staticDataViewModel, $('#div-form')[0])#}
+    {##}
+    {#ko.applyBindings(editCustViewModel, $('#id-div-btn')[0])#}
 
 </script>
 </body>

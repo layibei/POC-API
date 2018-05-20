@@ -10,9 +10,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Server_Client$user_login_app.coverage" NAME="user_login_app Coverage Results" MODIFIED="1526744517352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Server_Client$Server_Client.coverage" NAME="Server_Client Coverage Results" MODIFIED="1521168157974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Server_Client$app.coverage" NAME="app Coverage Results" MODIFIED="1522794629467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Server_Client$server_db.coverage" NAME="server_db Coverage Results" MODIFIED="1521109336217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Server_Client$server_db_all.coverage" NAME="server_db_all Coverage Results" MODIFIED="1521499208745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Server_Client$server_db_all.coverage" NAME="server_db_all Coverage Results" MODIFIED="1524150733261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Server_Client$user_login.coverage" NAME="user_login Coverage Results" MODIFIED="1526731517847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Server_Client$cmms.coverage" NAME="cmms Coverage Results" MODIFIED="1521366467294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
   </component>
   <component name="DatabaseView">
@@ -32,72 +35,9 @@
       <file leaf-file-name="cust_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="206" column="42" lean-forward="true" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server_db_all.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server_db_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="126" column="24" lean-forward="false" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#95#0" expanded="true" />
-                <marker date="1521501401440" expanded="true" signature="1495:1537" ph="select * fro... c_cmms" />
-                <marker date="1521501401440" expanded="true" signature="2300:2334" ph="select * fro... s_customer" />
-                <marker date="1521501401440" expanded="true" signature="2893:2932" ph="select * fro... s_customer" />
-                <marker date="1521501401440" expanded="true" signature="3791:3830" ph="select * fro... s_customer" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/cmms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1521408285341" expanded="true" signature="431:473" ph="select * fro... c_cmms" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server_db.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_db.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="60" column="57" lean-forward="true" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#90#0" expanded="true" />
-                <marker date="1521278646947" expanded="true" signature="1115:1152" ph="select * fro... s_customer" />
-                <marker date="1521278646947" expanded="true" signature="1115:1154" ph="select * fro... s_customer" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +45,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="101" column="53" lean-forward="false" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="53" />
+            <state relative-caret-position="226">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="e#66#156#0" expanded="true" />
               </folding>
@@ -114,11 +54,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/client.html">
+      <file leaf-file-name="user_login_app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_login_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="53" />
+            <state relative-caret-position="174">
+              <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cust_all.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cust_all.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -129,6 +93,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
       </list>
@@ -150,6 +115,10 @@
       <find>title</find>
       <find>staticData</find>
       <find>uri</find>
+      <find>tasks</find>
+      <find>update</find>
+      <find>js</find>
+      <find>login_user</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -158,11 +127,30 @@
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/server_db.py" />
-        <option value="$PROJECT_DIR$/templates/cust_all.html" />
         <option value="$PROJECT_DIR$/model/__init__.py" />
         <option value="$PROJECT_DIR$/model/cmms.py" />
+        <option value="$PROJECT_DIR$/templates/cust_detail_update.html" />
         <option value="$PROJECT_DIR$/templates/cust_detail.html" />
+        <option value="$PROJECT_DIR$/templates/exts.py" />
+        <option value="$PROJECT_DIR$/exts.py" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/templates/content.html" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/editTable.js" />
+        <option value="$PROJECT_DIR$/templates/new_page.html" />
+        <option value="$USER_HOME$/Desktop/python学习案例/knockout.mapping-latest (1).js" />
+        <option value="$PROJECT_DIR$/static/js/knockout.mapping-latest.js" />
+        <option value="$PROJECT_DIR$/static/js/knockout.mapping-latest (1).js" />
+        <option value="$PROJECT_DIR$/templates/cust_all_mapping.html" />
         <option value="$PROJECT_DIR$/server_db_all.py" />
+        <option value="$PROJECT_DIR$/templates/cust_all_vue.html" />
+        <option value="$PROJECT_DIR$/templates/cust_all.html" />
+        <option value="$PROJECT_DIR$/user_login.py" />
+        <option value="$PROJECT_DIR$/log.py" />
+        <option value="$PROJECT_DIR$/login_model.py" />
+        <option value="$PROJECT_DIR$/user_login_app.py" />
       </list>
     </option>
   </component>
@@ -173,8 +161,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="376" />
+    <option name="y" value="9" />
     <option name="width" value="1346" />
     <option name="height" value="698" />
   </component>
@@ -193,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,22 +189,11 @@
               <item name="Server_Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Server_Client" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Server_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Server_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Server_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,6 +202,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.lbw-PC\PycharmProjects\Server_Client\static\js" />
+      <recent name="C:\Users\Administrator.lbw-PC\PycharmProjects\Server_Client" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -237,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server_db_all">
+  <component name="RunManager" selected="Python.user_login_app">
     <configuration name="Server_Client" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,6 +236,25 @@
       <module name="Server_Client" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Server_Client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,25 +279,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="server_db" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Server_Client" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_db.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="server_db_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,17 +298,59 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="user_login" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Server_Client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator.lbw-PC\PycharmProjects\Server_Client\user_login_bak.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="user_login_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Server_Client" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/user_login_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Server_Client" />
-      <item index="1" class="java.lang.String" itemvalue="Python.server_db" />
-      <item index="2" class="java.lang.String" itemvalue="Python.server_db_all" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cmms" />
+      <item index="1" class="java.lang.String" itemvalue="Python.server_db_all" />
+      <item index="2" class="java.lang.String" itemvalue="Python.cmms" />
+      <item index="3" class="java.lang.String" itemvalue="Python.app" />
+      <item index="4" class="java.lang.String" itemvalue="Python.user_login" />
+      <item index="5" class="java.lang.String" itemvalue="Python.user_login_app" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.server_db_all" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cmms" />
-        <item index="2" class="java.lang.String" itemvalue="Python.server_db" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.user_login_app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.user_login" />
+        <item index="2" class="java.lang.String" itemvalue="Python.server_db_all" />
+        <item index="3" class="java.lang.String" itemvalue="Python.app" />
+        <item index="4" class="java.lang.String" itemvalue="Python.cmms" />
       </list>
     </recent_temporary>
   </component>
@@ -346,15 +372,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3739968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -385,11 +410,113 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_db_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="132" column="27" lean-forward="true" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+            <marker date="1523979736863" expanded="true" signature="2136:2178" ph="select * fro... c_cmms" />
+            <marker date="1523979736863" expanded="true" signature="2941:2975" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="3534:3573" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="4550:4589" ph="select * fro... s_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2793">
+          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_db_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="90" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+            <marker date="1523979736863" expanded="true" signature="2136:2178" ph="select * fro... c_cmms" />
+            <marker date="1523979736863" expanded="true" signature="2941:2975" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="3534:3573" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="4550:4589" ph="select * fro... s_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/editTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4864">
+          <caret line="256" column="3" lean-forward="false" selection-start-line="256" selection-start-column="3" selection-end-line="256" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_db_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="90" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+            <marker date="1523979736863" expanded="true" signature="2136:2178" ph="select * fro... c_cmms" />
+            <marker date="1523979736863" expanded="true" signature="2941:2975" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="3534:3573" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="4550:4589" ph="select * fro... s_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2128">
           <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="35" />
-          <folding>
-            <element signature="e#2661#3376#0#HTML" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -399,10 +526,10 @@
           <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="e#0#95#0" expanded="true" />
-            <marker date="1521501401440" expanded="true" signature="1495:1537" ph="select * fro... c_cmms" />
-            <marker date="1521501401440" expanded="true" signature="2300:2334" ph="select * fro... s_customer" />
-            <marker date="1521501401440" expanded="true" signature="2893:2932" ph="select * fro... s_customer" />
-            <marker date="1521501401440" expanded="true" signature="3791:3830" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="2136:2178" ph="select * fro... c_cmms" />
+            <marker date="1523979736863" expanded="true" signature="2941:2975" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="3534:3573" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="4550:4589" ph="select * fro... s_customer" />
           </folding>
         </state>
       </provider>
@@ -411,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1121">
           <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -442,42 +568,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cust_all.html___jb_old___" />
-    <entry file="file://$PROJECT_DIR$/templates/cust_all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/ibm_db-2.0.8a/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -485,61 +583,227 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_detail_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="793" column="0" lean-forward="false" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="91" column="22" lean-forward="false" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/python学习案例/knockout.mapping-latest (1).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/knockout.mapping-latest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/editTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/knockout.mapping-latest (1).js" />
+    <entry file="file://$PROJECT_DIR$/templates/cust_all_vue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_login_bak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/python学习案例/flaskTs-master/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/python学习案例/flaskTs-master/app/main/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/python学习案例/flaskTs-master/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="46" column="41" lean-forward="true" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1521408285341" expanded="true" signature="431:473" ph="select * fro... c_cmms" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="60" column="57" lean-forward="true" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+        <state relative-caret-position="171">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="89" />
           <folding>
-            <element signature="e#0#90#0" expanded="true" />
             <marker date="1521278646947" expanded="true" signature="1115:1152" ph="select * fro... s_customer" />
             <marker date="1521278646947" expanded="true" signature="1115:1154" ph="select * fro... s_customer" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="157" column="53" lean-forward="false" selection-start-line="157" selection-start-column="49" selection-end-line="157" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="206" column="42" lean-forward="true" selection-start-line="206" selection-start-column="42" selection-end-line="206" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="101" column="53" lean-forward="false" selection-start-line="101" selection-start-column="49" selection-end-line="101" selection-end-column="53" />
+        <state relative-caret-position="226">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="e#66#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server_db_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="126" column="24" lean-forward="false" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        <state relative-caret-position="234">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="89" />
           <folding>
             <element signature="e#0#95#0" expanded="true" />
-            <marker date="1521501401440" expanded="true" signature="1495:1537" ph="select * fro... c_cmms" />
-            <marker date="1521501401440" expanded="true" signature="2300:2334" ph="select * fro... s_customer" />
-            <marker date="1521501401440" expanded="true" signature="2893:2932" ph="select * fro... s_customer" />
-            <marker date="1521501401440" expanded="true" signature="3791:3830" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="2136:2178" ph="select * fro... c_cmms" />
+            <marker date="1523979736863" expanded="true" signature="2941:2975" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="3534:3573" ph="select * fro... s_customer" />
+            <marker date="1523979736863" expanded="true" signature="4550:4589" ph="select * fro... s_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cust_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_login_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
