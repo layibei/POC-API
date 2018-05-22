@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<body>
+<form id="form1" >
+    <span>请输入账号</span>
+    <input type="text" name="name" id="name" placeholder="name">
+    <span>请输入密码</span>
+    <input type="password" name="pw" id="pw" placeholder="password">
+    <!--<button onclick="login()"> Login </button> -->
+    <!--<<a class="btn btn-primary" onclick="login()" type="button"> dddd</a>-->
+    <button id="sub" type="button" onclick="login()"/> login </form>
+ </form>
+</body>
+<script>
+    function login() {
+        console.log('sssss',$('#form1').serialize())
+            $.ajax({
+
+                type: "PUT",
+                dataType: "json",
+                async:false,
+                url: "http://127.0.0.1:5000/api/v1.0/user_login" ,//-->make this to parameter
+                data: $('#form1').serialize(),
+                callback: function(data){
+                    r = data['result']
+                    console.log('call back',data)
+                },
+                success: function(data) {
+                    console.log('success',data)
+               } ,
+                error : function() {
+                    alert("异常！");
+                }
+            });
+
+        }
+</script>
+</html>
