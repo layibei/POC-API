@@ -1,0 +1,63 @@
+<script src="https://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/datatables/1.10.16/js/jquery.dataTables.js"></script>
+
+
+<p>
+  home works!
+</p>
+
+<!--3 使用数据 {{ 属性 }}-->
+<p>
+  {{homeTitle}}
+  “数据绑定”
+</p>
+
+<input [value]="myString">
+
+<p>
+  {{myString}}
+</p>
+
+<!-- 双向数据绑定 -->
+<input [(ngModel)] = "person.name">
+
+<p>
+  {{person.name}}
+</p>
+
+<hr>
+<!-- 循环数据展示 -->
+<h2>我喜欢的网站: {{mySite}}</h2>
+<p>网站列表:</p>
+<ul>
+  <li *ngFor="let site of sites">
+    {{site}}
+    </li>
+</ul>
+
+<p>用户列表:</p>
+<ul>
+  <li *ngFor="let customer of customerList">
+    {{ customer.CID }}  {{ customer.cName }}
+  </li>
+</ul>
+
+<p>双向绑定:</p>
+<ul>
+  <li *ngFor="let customer of customerList; let index=index">
+    <input name=a{{index}} type="text" [(ngModel)] = "customer.cName">
+  </li>
+</ul>
+
+<!--
+<ng-table [config]="config" [columns]="columns"></ng-table>
+-->
+<table id="main-table" class="table table-bordered">
+  <tbody>
+    <tr *ngFor="let customer of customerList; let index=index">
+      <input name=a{{index}} type="text" [(ngModel)] = "customer.cName">
+    </tr>
+  </tbody>
+  <table>
+
+
