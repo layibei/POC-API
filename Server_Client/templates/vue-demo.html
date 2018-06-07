@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue路由练习</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <link rel="icon" type="text/css" href="http://i2.muimg.com/567571/e0565125397e23c4.jpg">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="a">
+        <!-- 使用 router-link 组件来导航. -->
+        <!-- 通过传入 `to` 属性指定链接. -->
+        <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+            <router-link to="/recommend">推荐</router-link>
+            <router-link to="/society">社会</router-link>
+            <router-link to="/recreation">娱乐</router-link>
+            <router-link to="/military">军事</router-link>
+            <router-link to="/education">体育</router-link>
+        </div>
+        <!-- 路由出口 -->
+        <!-- 路由匹配到的组件将渲染在这里 -->
+        <router-view></router-view>
+    </div>
+</body>
+<script type="text/x-template" id="checkbox-template">
+    <div>
+		<img src="https://ws1.sinaimg.cn/large/93838f95ly1fggker20l4j21hc0xcwfi.jpg" alt="">
+	</div>
+</script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+
+
+</html>

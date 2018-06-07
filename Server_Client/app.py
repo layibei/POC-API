@@ -11,7 +11,11 @@ db.init_app(app)
 # db.create_all()
 @app.route('/')
 def index():
-    return render_template('new_page.html')
+    return render_template('vue-demo.html')
+
+@app.route('/temp')
+def index2():
+    return render_template('vue-template.html')
 
 if __name__ == '__main__':
     #最好关闭debug

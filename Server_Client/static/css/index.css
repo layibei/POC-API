@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+#app{
+	width: 490px;
+	border: 2px solid #666;
+	margin:5px auto;
+}
+
+#app .a{
+	padding: 10px;
+	border-bottom: 2px solid #666;
+}
+
+a{
+	display: inline-block;
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	/* 去处a链接下面的横线 */
+	text-decoration: none;
+	font-size:20px;
+	background-color: #0AA770;
+	color:#fff;
+	border:2px solid #034D34;
+}
+
+#app div:last-child{
+	padding:10px;
+	text-align: center;
+}
+
+img{
+	width: 400px;
+	height: 300px;
+}
